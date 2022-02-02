@@ -1,0 +1,257 @@
+@import '../../var';
+
+#section1 {
+    background-image:url(../../images/mobile/image-header.jpg);
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    flex-direction: column;
+}
+
+.mainTitle {
+    color:white;
+    font-family:$fraunce;
+    text-transform:uppercase;
+    font-size:3rem;
+    font-weight:700;
+    line-height:60px;
+    margin-bottom:6rem;
+}
+
+.title {
+    font-family:$fraunce;
+    color:$desBlue;
+    font-size:2.2rem;
+    font-weight:700;
+    line-height:2.7rem;
+}
+
+.subtext {
+    font-family:$barlow;
+    color:$vDgrayBlue;
+    font-size:1.3rem;
+}
+
+.dark {
+    color:$desBlue;
+    margin-bottom: 2.3rem;
+
+}
+
+.textContainer {
+    padding:0 1rem;
+    height:56vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+.titleCyan {
+    @extend .title;
+    color:$cyan;
+}
+
+.subtextCyan {
+    @extend .subtext;
+    color:$cyan;
+}
+
+.learn {
+    font-family:$fraunce;
+    text-transform:uppercase;
+    font-size:1.2rem;
+    font-weight:800;
+    position:relative;
+}
+
+.learn:hover {
+    cursor:pointer;
+}
+
+.clientTitle {
+    font-family:$fraunce;
+    color:$greyBlue;
+    text-transform:uppercase;
+    font-weight:800;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+}
+
+.name {
+    font-family:$fraunce;
+    color:$desBlue;
+    font-weight:800;
+    font-size:1.5rem;
+    margin-bottom:0.5rem;
+}
+
+.subName {
+    font-family:$barlow;
+    color:$greyBlue;
+}
+
+.learn::after {
+    width:100%;
+    position:absolute;  
+    z-index: -1; 
+    height:1rem;
+    top:50%;
+    content:'';
+    display:block;
+    border-radius:20px;
+}
+
+#section3 .learn::after {
+    background-color:#fe7c6b33
+}
+
+#section2 .learn::after {
+    background-color:#fad40045;
+}
+
+
+#section2, #section3 {
+    height:100vh;
+    img {
+        width:100%;
+    }
+}
+
+#section4 {
+    height:100vh;
+    display:flex;
+    align-items: flex-end;
+    background-image:url(../../images/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#section5 {
+    height:100vh;
+    display:flex;
+    align-items: flex-end;
+    background-image:url(../../images/mobile/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#testimonials {
+    padding: 4rem 1rem;
+    img {
+        border-radius:50%;
+        margin-bottom:2rem;
+    }
+    .client {
+        margin-top:4rem;
+    }
+}
+
+#images {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    img {
+        width:50%;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    #section1 {
+        background-image:url(../../images/desktop/image-header.jpg)
+    }
+
+    #section2, #section3 {
+        flex-direction:row;
+        display:flex;
+        img {
+            width:50%;
+            object-fit:cover;
+        }
+        
+    }
+
+    #section2 {
+        flex-direction:row-reverse;
+    }
+
+    #section4 {
+        height:100vh;
+        background-image:url(../../images/desktop/image-graphic-design.jpg);
+    }
+
+    #section5 {
+        height:100vh;
+        background-image:url(../../images/desktop/image-photography.jpg);
+    }
+
+    .textContainer {
+        height:100vh;
+        padding:0 7.5rem;
+        align-items:flex-start;
+        p {
+            text-align:left;
+        }
+        .title {
+            margin-bottom:2rem;
+        }
+        .subtext {
+            margin-bottom:2rem;
+        }
+    }
+
+    .end {
+        justify-content: flex-end;
+        align-items:center;
+        padding-bottom:5rem;
+        p {
+            text-align:center;
+        }
+    }
+
+    .section-4-5 {
+        display:flex;
+        flex-direction:row;
+    }
+
+    #section4, #section5 {
+        width:50%;
+    }
+
+    #testimonials {
+        height:100vh;
+        padding:4rem 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .client-container {
+            flex-direction:row;
+            display:flex;
+        }
+        .client {
+            margin:0px 2rem;
+        }
+
+    }
+
+    #images {
+        display:flex;
+        flex-wrap:nowrap;
+        flex-direction:row;
+        img {
+            width:25%;
+        }
+    }
+
+    .subtextCyan {
+        font-size:1.5rem;
+    }
+
+
+}

@@ -1,0 +1,64 @@
+@import '../../var';
+
+.footer {
+    height:45vh;
+    background-color:#ade7dc; 
+    justify-content:space-around;
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+
+    img {
+        margin-top:3rem;
+        width:50%;
+    }
+    .icon-list {
+        padding:0;
+        margin-bottom:4rem;
+        display:flex;
+        flex-direction:row;
+
+        li {
+            
+            list-style:none;
+            margin:0 1rem;
+            .icon {
+                transition:all 200ms ease-in;
+                color:$mCyan;
+                font-size:2rem;
+            }
+        }
+    }
+    .link-list {
+        margin-bottom:4rem;
+        padding:0;
+        display:flex;
+        flex-direction:row;
+        font-family:$barlow;
+        li {
+            transition:all 200ms ease-in;
+            list-style:none;
+            color:$mCyan;
+            font-size:1.3rem;
+            margin:0 1rem;
+           
+        }
+    }
+}
+
+.link-list li:hover {
+    color:white;
+    cursor:pointer;
+}
+
+.footer .icon-list .icon:hover {
+    color:white;
+    cursor:pointer;
+}
+
+@media only screen and (min-width: 900px){
+    .footer img {
+        width:12%;
+        margin-bottom:2rem;
+    }
+}

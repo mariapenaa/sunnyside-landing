@@ -1,0 +1,124 @@
+@import '../../var';
+
+.headerContainer {
+    background-color:#3ebffe;
+    z-index:10;
+    height:12vh;
+    position:fixed;
+    width:100%;
+    padding:0 1.2rem;
+    ul {
+        padding:0;
+        display:flex;
+        flex-direction:row;
+        li {
+            transition:all 200ms ease-in;
+            color:white;
+            list-style:none;
+        }
+        li:hover {
+            transform:scale(1.2);
+            cursor:pointer;
+        }
+    }
+    .dList {
+        display:none;
+    }
+    .burgerIcon {
+        color:white;
+        font-size:2rem;
+    }
+    img {
+        transition:all 200ms ease-in;
+        cursor:pointer;
+    }
+    img:hover {
+        transform:scale(1.2)
+    }
+}
+
+.popup {
+    position:absolute;
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    top: 110%;
+    left: 5%;
+    width: 90%;
+    padding:1rem 5rem;
+    p {
+        color:$dGrayBlue;
+        font-family:$barlow;
+        font-size:1.1rem;
+        margin:0.7rem 0px;
+    }
+}
+
+.display {
+    transition:all 300ms ease-in;
+    opacity:1;
+}
+
+.displayNone {
+    transition:all 300ms ease-in;
+    opacity:0;
+}
+
+.popup::before {
+    content:'';
+    display:block;
+    height:5px;
+    position:absolute;
+    right:0;
+    width: 0; 
+    height: 0; 
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-right: 50px solid white;
+    top: -12%;
+}
+
+.contact {
+    transition:all 300ms ease-in;
+    background-color:$yellow;
+    padding:1rem 1.5rem;
+    border-radius:30px;
+    font-family:$fraunce !important;
+    color:$desBlue !important;
+    text-transform:uppercase;
+    font-size:0.9rem !important;
+    font-weight:800;
+}
+
+.contact:hover {
+    background-color:#70d0ff;
+    color:white !important;
+    cursor:pointer;
+}
+
+.contactWhite {
+    @extend .contact;
+    background-color:white;
+}
+
+@media only screen and (min-width: 900px){
+    .burgerIcon {
+        display:none !important;
+    }
+    .headerContainer {
+        height:15vh;
+        padding:0 3rem;
+        .dList {
+            display:flex;
+            align-items:center;
+            li {
+                margin-left:2rem;
+                font-family:$barlow;
+                font-size:1.1rem;
+            }
+        }
+    }
+
+}
