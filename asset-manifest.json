@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/sunnyside-landing/static/css/main.69532c57.css",
+    "main.js": "/sunnyside-landing/static/js/main.0569ef8c.js",
+    "static/js/787.2091ecc7.chunk.js": "/sunnyside-landing/static/js/787.2091ecc7.chunk.js",
+    "static/media/image-header.jpg": "/sunnyside-landing/static/media/image-header.9167cda0c72b56b2cda5.jpg",
+    "static/media/image-gallery-milkbottles.jpg": "/sunnyside-landing/static/media/image-gallery-milkbottles.df1d9d8460e873924250.jpg",
+    "static/media/image-graphic-design.jpg": "/sunnyside-landing/static/media/image-graphic-design.7ac8bdf0d3df29591a3b.jpg",
+    "static/media/image-photography.jpg": "/sunnyside-landing/static/media/image-photography.104cf40b52f66520afb0.jpg",
+    "static/media/image-gallery-sugarcubes.jpg": "/sunnyside-landing/static/media/image-gallery-sugarcubes.09b72f4fbfbf08579f9d.jpg",
+    "static/media/image-gallery-orange.jpg": "/sunnyside-landing/static/media/image-gallery-orange.373d43f1f42a447ed9a6.jpg",
+    "static/media/image-gallery-cone.jpg": "/sunnyside-landing/static/media/image-gallery-cone.461ff4214c3ac822dfff.jpg",
+    "static/media/image-gallery-sugar-cubes.jpg": "/sunnyside-landing/static/media/image-gallery-sugar-cubes.fefc3841f885fca27c53.jpg",
+    "static/media/logo.svg": "/sunnyside-landing/static/media/logo.4271b8992622e4dd1cc7de08466dab06.svg",
+    "index.html": "/sunnyside-landing/index.html",
+    "static/media/icon-arrow-down.svg": "/sunnyside-landing/static/media/icon-arrow-down.979ef07a7cbb07d35f05bbaa093f7489.svg",
+    "main.69532c57.css.map": "/sunnyside-landing/static/css/main.69532c57.css.map",
+    "main.0569ef8c.js.map": "/sunnyside-landing/static/js/main.0569ef8c.js.map",
+    "787.2091ecc7.chunk.js.map": "/sunnyside-landing/static/js/787.2091ecc7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69532c57.css",
+    "static/js/main.0569ef8c.js"
+  ]
+}
