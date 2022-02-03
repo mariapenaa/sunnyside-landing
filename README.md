@@ -43,6 +43,7 @@ I coded this website mobile-first, using flexbox for the layout. I also added so
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+- [On scroll animation library](https://michalsnik.github.io/aos/)
 - Material UI
 - Bootstrap
 - Material UI icons
